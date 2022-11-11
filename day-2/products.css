@@ -1,7 +1,8 @@
-body{
-    margin: 0px;
+*{
+    margin: 0;
 }
-/* navigationBar section */
+
+/* navigation bar section */
 #navbar{
     width: 100%;
     height: 85px;
@@ -69,55 +70,69 @@ body{
     background-color: rgb(232, 48, 48);
     cursor: pointer;
 }
+
 /* top section */
 #top{
     width: 100%;
     height: auto;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4%;
+    background-color: aliceblue;
+    padding-bottom: 2.5%;
 }
-#top>h1{
+#top>div{
+    width: 48%;
+}
+#top>div>img{
+    width: 90%;
+}
+#top>div>h1{
     text-align: center;
     color: rgb(22, 22, 22);
     margin-top: 8%;
     font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#top>p{
+#top>div>p{
     text-align: center;
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: -1%;
+    margin-top: 2%;
 }
-#top>div{
+#top>div>div{
     height: 75px;
 }
-#top>div>button,input{
+#top>div>div>button,input{
     display: block;
     margin: auto;
+    margin-top: 3%;
 }
-#top>div>input{
+#top>div>div>input{
     width: 35%;
     height: 70px;
     border-radius: 50px;
     border: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
+    margin-top: 2%;
 }
-#top>div>button{
-    margin-top: 1%;
+#top>div>div>button{
+    margin-top: 2%;
     height: 70%;
     width: 15%;
     border-radius: 50px;
     background-color: rgb(255, 111, 0);
     color: black;
-    font-size: 23px;
+    font-size: 18px;
 }
-#top>div>button:hover{
+#top>div>div>button:hover{
     background-color: orangered;
 }
 #p{
-    margin-top: 80px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
 }
@@ -130,11 +145,6 @@ body{
     height: 30px;
     margin-top: 13px; 
 }
-#p~img{
-    display: block;
-    margin: auto;
-    width: 70%;
-}
 
 /* logo section */
 #cLogo{
@@ -142,19 +152,21 @@ body{
     width: 80%;
     display: flex;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 3%;
 }
 #cLogo>img{
     width: 10%;
     margin: 1%;   
 }
-
-/* mid1 Section */
 hr{
     width:70%;
     margin-top: 30px;
     color: grey;
+    margin: auto;
+    margin-top: 1%;
 }
+
+/* mid1 Section */
 hr+h1{
     text-align: center;
     margin-top: 45px;
@@ -336,6 +348,7 @@ h1+p{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     font-size: 30px;
     text-align: center;
+    margin-top: 1%;
 }
 #mid4>div>button{
     margin-top: 1%;
