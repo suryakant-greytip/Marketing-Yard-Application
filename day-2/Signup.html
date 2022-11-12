@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
 </head>
 <body>
     <div id="signup">
@@ -15,14 +16,14 @@
             </div>
             <h2>Get Started for FREE</h2>
             <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Name">
+            <input id="name" type="text" placeholder="Name" required>
             <label for="email">Username</label>
-            <input id="email" type="email" placeholder="Work Email">
+            <input id="email" type="email" placeholder="Work Email" required>
             <label for="url">Website URL</label>
-            <input id="url" type="url" placeholder="Website Url">
+            <input id="url" type="url" placeholder="Website Url" required>
             <label for="pass">Password</label>
-            <input id="pass" type="password" placeholder="Password">
-            <button>SIGN UP</button>
+            <input id="pass" type="password" placeholder="Password" required>
+            <button class="signup">SIGN UP</button>
             <p>Already have an account? &nbsp; <a href="./signin.html">Signin</a></p>
         </div>
         <div>
@@ -31,6 +32,8 @@
     </div>
 </body>
 </html>
+
+<script src="./signup.js"></script>
 
 
 
