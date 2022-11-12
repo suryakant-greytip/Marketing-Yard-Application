@@ -38,6 +38,7 @@ body{
 #signup>div:nth-child(1)>input{
     padding-left: 2.1%;
     font-size: 17px;
+    margin-top: 10px;
 }
 #signup>div:nth-child(1)>label{
     margin-bottom: -4%;
