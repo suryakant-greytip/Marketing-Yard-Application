@@ -40,6 +40,9 @@ body{
     padding-left: 2.1%;
     font-size: 17px;
 }
+#signup>div:nth-child(1)>input:hover{
+    background-color: aliceblue;
+}
 #signup>div:nth-child(1)>label{
     margin-bottom: -4%;
     margin-top: 5%;
@@ -58,6 +61,9 @@ body{
     background-color: rgb(255, 110, 57);
     border: 0;
     border-radius: 3px;
+}
+#signin:hover{
+    background-color: orangered;
 }
 #signup>div>p{
     text-align: center;

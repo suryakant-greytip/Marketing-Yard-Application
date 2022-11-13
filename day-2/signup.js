@@ -6,8 +6,16 @@ document.querySelector(".signup").addEventListener("click",function(){
     let username=document.querySelector("#email").value;
     let website=document.querySelector("#url").value;
     let password=document.querySelector("#pass").value;
- 
-
+    
+    let flag2=true;
+    if(website.includes("https",0) || website.includes("www.",0)){
+        flag2=false;
+    }
+    if(flag2){
+        alert("Please Enter Valid URL");
+        console.log("plzz")
+        return;
+    }
     for(let i=0; i<=LSdata.length-1; i++){
         if(username==LSdata[i].username){
             alert("Your account already exist");
@@ -39,7 +47,9 @@ document.querySelector(".signup").addEventListener("click",function(){
         }
         LSdata.push(obj);
         localStorage.setItem("person-detail",JSON.stringify(LSdata));
-        console.log(LSdata);
+        alert("Signup Successful");
+
+        window.location="http://127.0.0.1:5500/day-2/signin.html";
     }
 
       
