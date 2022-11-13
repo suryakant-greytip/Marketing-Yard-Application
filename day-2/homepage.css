@@ -101,8 +101,11 @@ body{
     border-radius: 50px;
     border: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+}
+#top>div>input:hover{
+    background-color: aliceblue;
 }
 #top>div>button{
     margin-top: 1%;
@@ -111,7 +114,9 @@ body{
     border-radius: 50px;
     background-color: rgb(255, 111, 0);
     color: black;
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 #top>div>button:hover{
     background-color: orangered;
@@ -334,8 +339,11 @@ h1+p{
     border-radius: 50px;
     border: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
+}
+#mid4>div>input:hover{
+    background-color: aliceblue;
 }
 #mid4>div>button{
     margin-top: 1%;
@@ -344,7 +352,8 @@ h1+p{
     border-radius: 50px;
     background-color: rgb(255, 111, 0);
     color: black;
-    font-size: 23px;
+    font-size: 18px;
+    font-weight: bold;
 }
 #mid4>div>button:hover{
     background-color: orangered;
@@ -362,4 +371,11 @@ h1+p{
 .check{
     height: 30px;
     margin-top: 13px; 
+}
+
+
+@media all and (min-width:830px) and (max-width:1400px){
+    #freedemo{
+        font-size: 10px;
+    }
 }
